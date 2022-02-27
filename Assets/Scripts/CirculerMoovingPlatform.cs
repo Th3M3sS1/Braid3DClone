@@ -11,7 +11,7 @@ namespace BraidTimeWalkClone.Ability
 
         #region update for limited time ability
         // Update is called once per frame
-        /*
+        
         void Update()
         {
             transform.localPosition = Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, Vector3.up) * transform.localPosition;
@@ -40,7 +40,7 @@ namespace BraidTimeWalkClone.Ability
             // Drawing gizmos of the data we stored earlier
             for (int i = 0; i < timeWalkData.Count - 1; i++)
             {
-                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition);
+                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition, Color.blue);
             }
 
             if (Input.GetKeyDown(KeyCode.E))
@@ -52,11 +52,11 @@ namespace BraidTimeWalkClone.Ability
                 //    cameraController.Lock(true);
             }
         }
-        */
+        
         #endregion
 
         #region update for unlimited time
-
+        /*
         private void Update()
         {
             transform.localPosition = Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, Vector3.up) * transform.localPosition;
@@ -80,7 +80,7 @@ namespace BraidTimeWalkClone.Ability
             // Drawing gizmos of the data we stored earlier
             for (int i = 0; i < timeWalkData.Count - 1; i++)
             {
-                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition);
+                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition, Color.blue);
             }
 
             if (Input.GetKeyDown(KeyCode.E))
@@ -107,7 +107,7 @@ namespace BraidTimeWalkClone.Ability
                 canCollectTimeWalkData = true;
             }
         }
-
+        */
         #endregion
 
         private void OnCollisionEnter(Collision collision)

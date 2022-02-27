@@ -67,7 +67,7 @@ namespace BraidTimeWalkClone.Ability
         }
 
         #region Region for limited TIME WALK ability
-        /*
+        
         private void Update()
         {
             // Adding time when the update starts
@@ -95,7 +95,7 @@ namespace BraidTimeWalkClone.Ability
             // Drawing gizmos of the data we stored earlier
             for (int i = 0; i < timeWalkData.Count - 1; i++)
             {
-                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition);
+                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition, Color.red);
             }
 
             if (Input.GetKeyDown(KeyCode.E))
@@ -196,11 +196,11 @@ namespace BraidTimeWalkClone.Ability
                 cameraController.Lock(false);
 
             canCollectTimeWalkData = true;
-        }*/
+        }
         #endregion
 
         #region Region for Unlimited TIMEWALK/ OR LAST STARTING POINT abiity
-
+        /*
         private void Update()
         {
             // Adding time when the update starts
@@ -222,7 +222,7 @@ namespace BraidTimeWalkClone.Ability
             // Drawing gizmos of the data we stored earlier
             for (int i = 0; i < timeWalkData.Count - 1; i++)
             {
-                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition);
+                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition, Color.red);
             }
 
             if (Input.GetKeyDown(KeyCode.E))
@@ -340,7 +340,7 @@ namespace BraidTimeWalkClone.Ability
             //    cameraController.Lock(false);
             //
             //canCollectTimeWalkData = true;
-        }
+        }*/
         #endregion
     }
 }

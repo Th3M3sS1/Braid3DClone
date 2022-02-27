@@ -15,7 +15,7 @@ namespace BraidTimeWalkClone.Ability
 
 
         #region updatefor limited time walk skill
-        /*
+        
         // Update is called once per frame
         void Update()
         {
@@ -51,7 +51,7 @@ namespace BraidTimeWalkClone.Ability
             // Drawing gizmos of the data we stored earlier
             for (int i = 0; i < timeWalkData.Count - 1; i++)
             {
-                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition);
+                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition, Color.blue);
             }
 
             if (Input.GetKeyDown(KeyCode.E))
@@ -63,11 +63,11 @@ namespace BraidTimeWalkClone.Ability
                 //    cameraController.Lock(true);
             }
         }
-        */
+        
         #endregion
 
         #region Update For unlimited or last start data
-
+        /*
         private void Update()
         {
             if (transform.position != wayPoints[currentPoint].position)
@@ -96,7 +96,7 @@ namespace BraidTimeWalkClone.Ability
             // Drawing gizmos of the data we stored earlier
             for (int i = 0; i < timeWalkData.Count - 1; i++)
             {
-                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition);
+                Debug.DrawLine(timeWalkData[i].objectPosition, timeWalkData[i + 1].objectPosition, Color.blue);
             }
 
             if (Input.GetKeyDown(KeyCode.E))
@@ -123,7 +123,7 @@ namespace BraidTimeWalkClone.Ability
                 canCollectTimeWalkData = true;
             }
         }
-
+        */
         #endregion
 
         private void OnCollisionEnter(Collision collision)
